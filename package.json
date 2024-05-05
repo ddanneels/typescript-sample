@@ -1,0 +1,26 @@
+{
+  "name": "typescript-sample",
+  "version": "0.1.0",
+  "description": "A sample application in Typescript",
+  "main": "build/main/main.js",
+  "type": "module",
+  "scripts": {
+    "run": "node build/main/main.js",
+    "watch": "npx tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddanneels/typescript-sample.git"
+  },
+  "author": "Damien DANNEELS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ddanneels/typescript-sample/issues"
+  },
+  "homepage": "https://github.com/ddanneels/typescript-sample#readme",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

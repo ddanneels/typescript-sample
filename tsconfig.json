@@ -1,0 +1,62 @@
+{
+    "compilerOptions": {
+        "module": "node16",
+        "esModuleInterop": true,
+        "moduleResolution": "node16",
+        "target": "es2022",
+
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "strict": true,
+        "incremental": true,
+        "rootDir": "src",
+        "outDir": "build/main",
+        "declaration": true,
+        "inlineSourceMap": true,
+        "resolveJsonModule": true,
+        /* Strict Type-Checking Options */
+        "noImplicitAny": true /* Raise error on expressions and declarations with an implied 'any' type. */,
+        "strictNullChecks": true /* Enable strict null checks. */,
+        "strictFunctionTypes": true /* Enable strict checking of function types. */,
+        "strictPropertyInitialization": true /* Enable strict checking of property initialization in classes. */,
+        "noImplicitThis": true /* Raise error on 'this' expressions with an implied 'any' type. */,
+        "alwaysStrict": true /* Parse in strict mode and emit "use strict" for each source file. */,
+        /* Additional Checks */
+        "noUnusedLocals": true /* Report errors on unused locals. */,
+        "noUnusedParameters": true /* Report errors on unused parameters. */,
+        "noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
+        "noFallthroughCasesInSwitch": true /* Report errors for fallthrough cases in switch statement. */,
+        /* Debugging Options */
+        "traceResolution": false /* Report module resolution log messages. */,
+        "listEmittedFiles": false /* Print names of generated files part of the compilation. */,
+        "listFiles": false /* Print names of files part of the compilation. */,
+        "pretty": true /* Stylize errors and messages using color and context. */,
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "**/*.spec.ts",
+        "node_modules/**"
+    ],
+    // NEW: Options for file/directory watching
+    "watchOptions": {
+        // Use native file system events for files and directories
+        "watchFile": "useFsEvents",
+        "watchDirectory": "useFsEvents",
+        // Poll files for updates more frequently
+        // when they're updated a lot.
+        "fallbackPolling": "dynamicPriority",
+        // Don't coalesce watch notification
+        "synchronousWatchDirectory": true,
+        // Finally, two additional settings for reducing the amount of possible
+        // files to track  work from these directories
+        "excludeDirectories": [
+            "**/node_modules",
+            "_build"
+        ],
+        "excludeFiles": [
+            "build/fileWhichChangesOften.ts"
+        ]
+    }
+}
