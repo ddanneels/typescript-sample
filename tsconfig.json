@@ -10,9 +10,9 @@
         "strict": true,
         "incremental": true,
         "rootDir": "src",
-        "outDir": "build/main",
+        "outDir": "build",
         "declaration": true,
-        "inlineSourceMap": true,
+        "sourceMap": true,
         "resolveJsonModule": true,
         /* Strict Type-Checking Options */
         "noImplicitAny": true /* Raise error on expressions and declarations with an implied 'any' type. */,
