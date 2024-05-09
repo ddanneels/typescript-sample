@@ -36,7 +36,7 @@
         "src/**/*.ts"
     ],
     "exclude": [
-        "**/*.spec.ts",
+        //"**/*.test.ts",
         "node_modules/**"
     ],
     // NEW: Options for file/directory watching
